@@ -166,11 +166,12 @@
                     var coord = coordinates[this.counter];
                     $(".coords.x"+coord.x+".y"+coord.y).addClass("highlight");
                     this.counter++;
+                    
+                    $("#percent").text(Math.round(1000*((this.counter)/coordinates.length))/10);
+                    
                     if($("#grid .col"+coord.x+".row"+coord.y).hasClass("black")){
                         return;
                     }
-                    
-                    $("#percent").text(Math.round(1000*((this.counter)/coordinates.length))/10);
                     
                     var center = Math.floor(templateWidth/2);
                     for(var i=0; i<templateHeight; i++){
