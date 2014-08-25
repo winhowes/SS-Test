@@ -1,0 +1,83 @@
+#grid,
+#templateGrid {
+    line-height: 0px;
+    display: inline-block;
+}
+#grid {
+    width: 50%;
+    min-width: 400px;
+}
+#template{
+    position:  fixed;
+    bottom: 15px;
+    margin-left: 10px;
+    width: 150px;
+    display: inline-block;
+}
+#templateGrid {
+    display: inline-block;
+    width: 60px;
+    vertical-align: top;
+}
+#template .col {
+    width: 60px;
+}
+#buttonCol {
+    display: inline-block;
+    vertical-align: top;
+}
+#buttonCol button{
+    display: block;
+    margin: 5px 0;
+}
+#coordinates {
+    display: inline-block;
+    overflow: auto;
+    vertical-align: top;
+    margin-left: 10px;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .3) inset;
+    padding: 5px;
+    position: fixed;
+    top: 5px;
+    bottom: 220px;
+}
+#template .col0 {
+    border-left: 1px solid #888;
+}
+#template .last_row {
+    border-bottom: 1px solid #888;
+}
+#template .block {
+    width: 15px;
+    height: 15px;
+    border-top: 1px solid #888;
+    border-right: 1px solid #888;
+}
+.block {
+    display: inline-block;
+    max-width: 15px;
+    max-height: 15px;
+    width: 1%;
+    background: #fff;
+}
+#grid .block:before{
+    display: block;
+    content: "";
+    padding-top: 100%;
+}
+.black {
+    background: #000;
+}
+.highlight {
+    box-shadow: 0 0 15px 2px #f7f71f inset;
+}
+#gridDimensions {
+    width: 400px;
+}
+#percentContainer {
+    display: inline-block;
+}
+#width,
+#height {
+    width: 50px;
+}

@@ -1,0 +1,33 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Signal Sciences Test</title>
+        <link href="./magic.css" media="screen" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="./jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="./magic.js"></script>
+    </head>
+    <body>
+        <form id="gridDimensions">
+            <h2>Grid Dimensions:</h2>
+            <input id="width" type="number" placeholder="100">
+            x
+            <input id="height" type="number" placeholder="100">
+            <button>Go</button>
+            <div id="percentContainer">
+                <span id="percent">0</span>% Done
+            </div>
+        </form>
+        <div id="grid"></div>
+        <div id="coordinates"></div>
+        <div id="template">
+            <h2>Template: </h2>
+            <p>Click on the template's squares to change the template.</p>
+            <div id="templateGrid"></div>
+            <div id="buttonCol">
+                <button id="stop">Stop</button>
+                <button id="resume">Resume</button>
+                <button id="restart">Restart</button>
+            </div>
+        </div>
+    </body>
+</html>
